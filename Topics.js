@@ -9,17 +9,17 @@ const Topics = ({ match }) => (
   <div> 
     This is a topics
     <div>
-    {
-      data.map((item, id) => 
-      <div key={id}>
-        <Link to={{
-            pathname: `${match.url}/${item._id}`,
-            state: item
-          }}>{item.name}
-        
-        </Link> 
-      </div>
-      )
+      {
+        data.map((item, id) => 
+          <div key={id}>
+            <Link to={{
+                pathname: `${match.url}/${item._id}`,
+                state: item
+              }}>{item.name}
+            
+            </Link> 
+          </div>
+        )
       }
       
     </div>
